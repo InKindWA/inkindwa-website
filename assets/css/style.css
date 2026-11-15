@@ -320,3 +320,33 @@ fieldset { border: 0; padding: 0; margin: 0; }
 @media (max-width: 860px) { .two-col { grid-template-columns: 1fr; gap: 28px; } }
 a[href^="mailto:"] { overflow-wrap: anywhere; }
 @media (max-width: 520px) { .btn { white-space: normal; text-align: center; } }
+
+/* ---------- Home page, A5 flyer wording (Nov 2026) ---------- */
+.h1-kicker { display: block; font-size: .55em; font-weight: 600; color: #fff; opacity: .95; margin-bottom: .25em; }
+.u-gold { color: #fff; text-decoration: underline; text-decoration-color: var(--gold); text-decoration-thickness: .12em; text-underline-offset: .14em; }
+.inkind-strip { background: var(--gold); color: var(--navy); text-align: center; padding: 16px 0; }
+.inkind-strip p { margin: 0; font-family: var(--font-head); font-weight: 600; font-size: clamp(1.02rem, 2.4vw, 1.3rem); }
+
+.journey { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 46px; }
+.stage { position: relative; border-radius: var(--radius); padding: 26px; color: var(--navy); }
+.stage .num { font-family: var(--font-head); font-weight: 700; display: inline-flex; width: 34px; height: 34px; border-radius: 50%; align-items: center; justify-content: center; background: rgba(9,64,117,.12); margin-bottom: 8px; }
+.stage h3 { font-size: 1.6rem; margin: 0 0 6px; }
+.stage p { font-size: 1.1rem; margin: 0; }
+.stage-connect { background: #DCEFFA; }
+.stage-enrich { background: #DFF3D3; }
+.stage-belong { background: var(--navy); color: #fff; }
+.stage-belong h3 { color: var(--gold); }
+.stage-belong .num { background: rgba(255,255,255,.15); color: #fff; }
+.stage-belong p { font-family: var(--font-head); font-weight: 600; font-size: 1.25rem; }
+.stage + .stage::before {
+  content: "→"; position: absolute; left: -38px; top: 50%; transform: translateY(-50%);
+  font-size: 1.8rem; font-weight: 700; color: var(--blue);
+}
+.talents { list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.talents li { background: #fff; border-radius: 999px; padding: 3px 12px; font-size: .9rem; font-weight: 600; }
+.wa-map { width: 120px; height: auto; margin-top: 14px; }
+.tag-gold { background: var(--gold); color: var(--navy); }
+@media (max-width: 860px) {
+  .journey { grid-template-columns: 1fr; gap: 40px; }
+  .stage + .stage::before { content: "↓"; left: 50%; top: -36px; transform: translateX(-50%); }
+}
