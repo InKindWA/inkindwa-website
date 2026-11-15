@@ -120,9 +120,12 @@
     </div>
     <div id="sign-up">
       
-<form class="form-card" name="volunteer" method="POST" action="thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
-  <input type="hidden" name="form-name" value="volunteer">
-  <p class="hidden-field"><label>Leave this empty: <input name="bot-field"></label></p>
+<form class="form-card" name="volunteer" method="POST" action="https://formsubmit.co/admin@inkindwa.org.au">
+  <input type="hidden" name="_subject" value="New volunteer sign-up - InKind WA website">
+  <input type="hidden" name="_next" value="https://inkindwa.org.au/thank-you.html">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="form" value="volunteer">
+  <p class="hidden-field"><label>Leave this empty: <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></p>
   <h2 class="mt-0">Volunteer sign-up</h2>
   <p class="hint">Fields marked <span class="req">*</span> are required.</p>
   <div class="form-grid">
@@ -145,21 +148,21 @@
     <fieldset class="full">
       <legend>What would you like to do?</legend>
       <div class="checks">
-        <label class="check"><input type="checkbox" name="interests[]" value="Festivals and community events"> Festivals &amp; community events</label>
-        <label class="check"><input type="checkbox" name="interests[]" value="Animal shelters and rescues"> Animal shelters &amp; rescues</label>
-        <label class="check"><input type="checkbox" name="interests[]" value="Aged care visits"> Aged care visits</label>
-        <label class="check"><input type="checkbox" name="interests[]" value="Sports days and community dinners"> Sports days &amp; community dinners</label>
-        <label class="check"><input type="checkbox" name="interests[]" value="Environment and clean-ups"> Environment &amp; clean-ups</label>
-        <label class="check"><input type="checkbox" name="interests[]" value="Admin, design and translation"> Admin, design &amp; translation</label>
+        <label class="check"><input type="checkbox" name="Interest - Festivals and community events" value="Yes"> Festivals &amp; community events</label>
+        <label class="check"><input type="checkbox" name="Interest - Animal shelters and rescues" value="Yes"> Animal shelters &amp; rescues</label>
+        <label class="check"><input type="checkbox" name="Interest - Aged care visits" value="Yes"> Aged care visits</label>
+        <label class="check"><input type="checkbox" name="Interest - Sports days and community dinners" value="Yes"> Sports days &amp; community dinners</label>
+        <label class="check"><input type="checkbox" name="Interest - Environment and clean-ups" value="Yes"> Environment &amp; clean-ups</label>
+        <label class="check"><input type="checkbox" name="Interest - Admin, design and translation" value="Yes"> Admin, design &amp; translation</label>
       </div>
     </fieldset>
     <fieldset class="full">
       <legend>When are you usually free?</legend>
       <div class="checks">
-        <label class="check"><input type="checkbox" name="availability[]" value="Weekdays"> Weekdays</label>
-        <label class="check"><input type="checkbox" name="availability[]" value="Weekday evenings"> Weekday evenings</label>
-        <label class="check"><input type="checkbox" name="availability[]" value="Weekends"> Weekends</label>
-        <label class="check"><input type="checkbox" name="availability[]" value="Semester breaks"> Semester breaks</label>
+        <label class="check"><input type="checkbox" name="Available - Weekdays" value="Yes"> Weekdays</label>
+        <label class="check"><input type="checkbox" name="Available - Weekday evenings" value="Yes"> Weekday evenings</label>
+        <label class="check"><input type="checkbox" name="Available - Weekends" value="Yes"> Weekends</label>
+        <label class="check"><input type="checkbox" name="Available - Semester breaks" value="Yes"> Semester breaks</label>
       </div>
     </fieldset>
     <fieldset class="full" data-ends="2026-12-05">

@@ -4,10 +4,21 @@ InKind WA website  (inkindwa.org.au)
 This folder IS the website. Every page is a plain .html file you can open in a text editor
 (VS Code, Notepad++, or TextEdit in plain-text mode).
 
-PUBLISH
-  Drag this whole folder onto your Netlify site's "Deploys" page. That's it.
-  Full steps (first set-up, GoDaddy domain, form emails) are in the
+PUBLISH (GitHub Pages)
+  Upload the CONTENTS of this folder (not the folder itself, and not the zip) to the
+  GitHub repository: Add file > Upload files > drag everything in > Commit changes.
+  index.html must sit at the top level of the repository.
+  The website updates itself within about 10 minutes.
+  Full steps (GitHub Pages, GoDaddy domain, activating the forms) are in the
   "InKind WA Website Go-Live Guide".
+
+FORMS
+  The three forms send to admin@inkindwa.org.au through FormSubmit (formsubmit.co).
+  The first time someone sends a form, FormSubmit emails admin@ asking you to confirm.
+  Click the confirm link once. Until then, no messages are delivered.
+
+CNAME
+  The file called CNAME tells GitHub the site's address is inkindwa.org.au. Keep it.
 
 BEFORE THE FIRST PUBLISH
   1. Replace  [ADD ABN]  with the association's ABN. It appears once in the footer of every

@@ -116,9 +116,12 @@
     </div>
     <div>
       
-<form class="form-card" name="partner" method="POST" action="thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
-  <input type="hidden" name="form-name" value="partner">
-  <p class="hidden-field"><label>Leave this empty: <input name="bot-field"></label></p>
+<form class="form-card" name="partner" method="POST" action="https://formsubmit.co/admin@inkindwa.org.au">
+  <input type="hidden" name="_subject" value="New partner enquiry - InKind WA website">
+  <input type="hidden" name="_next" value="https://inkindwa.org.au/thank-you.html">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="form" value="partner">
+  <p class="hidden-field"><label>Leave this empty: <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></p>
   <h2 class="mt-0">Partner enquiry</h2>
   <div class="form-grid">
     <div class="full"><label for="p-org">Organisation <span class="req">*</span></label><input id="p-org" type="text" name="organisation" autocomplete="organization" required></div>
@@ -140,12 +143,12 @@
     <fieldset class="full">
       <legend>How would you like to work together?</legend>
       <div class="checks">
-        <label class="check"><input type="checkbox" name="interest[]" value="Host volunteers"> Host volunteers</label>
-        <label class="check"><input type="checkbox" name="interest[]" value="Connect our students"> Connect our students</label>
-        <label class="check"><input type="checkbox" name="interest[]" value="Run a session together"> Run a session together</label>
-        <label class="check"><input type="checkbox" name="interest[]" value="Offer a venue, goods or services"> Offer a venue, goods or services</label>
-        <label class="check"><input type="checkbox" name="interest[]" value="Fund or sponsor"> Fund or sponsor</label>
-        <label class="check"><input type="checkbox" name="interest[]" value="Something else"> Something else</label>
+        <label class="check"><input type="checkbox" name="Partnership - Host volunteers" value="Yes"> Host volunteers</label>
+        <label class="check"><input type="checkbox" name="Partnership - Connect our students" value="Yes"> Connect our students</label>
+        <label class="check"><input type="checkbox" name="Partnership - Run a session together" value="Yes"> Run a session together</label>
+        <label class="check"><input type="checkbox" name="Partnership - Offer a venue, goods or services" value="Yes"> Offer a venue, goods or services</label>
+        <label class="check"><input type="checkbox" name="Partnership - Fund or sponsor" value="Yes"> Fund or sponsor</label>
+        <label class="check"><input type="checkbox" name="Partnership - Something else" value="Yes"> Something else</label>
       </div>
     </fieldset>
     <div class="full"><label for="p-msg">Tell us more</label><textarea id="p-msg" name="message" rows="4"></textarea></div>
